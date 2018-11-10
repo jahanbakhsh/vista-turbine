@@ -1,0 +1,9 @@
+-r base.txt
+selenium==2.48.0
+coverage==4.0.2
+django-jenkins==0.18.1
+pep8==1.6.2
+pyflakes==1.0.0
+pylint==1.4.4
+flake8==2.5.0
+

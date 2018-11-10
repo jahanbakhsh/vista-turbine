@@ -1,0 +1,58 @@
+# PyCharm Files
+
+
+
+.idea/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+venv
+*.pyc
+staticfiles
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+dist/
+
+# Translations
+*.pot
+*.mo
+
+# Django stuff
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+.hypothesis/
+reports/
+!.keep
+!.gitignore
+
+
+
+
+
+
+
+*~

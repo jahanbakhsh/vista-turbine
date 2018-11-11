@@ -1,4 +1,5 @@
 from django.shortcuts import render,HttpResponse,get_object_or_404
+from django.conf import settings
 from django.http import HttpResponse,HttpResponseRedirect
 
 # class Index():
@@ -10,5 +11,6 @@ from django.http import HttpResponse,HttpResponseRedirect
 #         # return render(request , index_page)
 def Index(re):
     index_page = 'index.html'
+    print(settings.STATIC_ROOT)
     # return HttpResponse(index_page)
     return render(re , index_page)

@@ -541,6 +541,8 @@ color: #777;
 	width: 300px;
 	border-radius: 5px;
 	top: 0;
+    display:block;
+    margin:auto;
 }
 #capabilitie-img:hover{
 	opacity: 0.7;
@@ -577,13 +579,13 @@ width: 100%
 	top: 5%;
 	right: 5%;
 	position: absolute;
-	font-size: 2em;
+	font-size: 3em;
 	font-weight: bold;
 	cursor: pointer;
 }
 .close:hover,
 .close:focus {
-    color: #bbb;
+    color: white;
     text-decoration: none;
     cursor: pointer;
 }

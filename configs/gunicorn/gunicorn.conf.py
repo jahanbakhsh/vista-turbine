@@ -1,6 +1,6 @@
 import multiprocessing
 
-proc_name = "SDP"
+proc_name = "VistaTurbine"
 
 bind = "0.0.0.0:8001" 
 pidfile = "/var/tmp/gunicorn.pid"
@@ -14,7 +14,7 @@ keepalive = 5
 max_requests = 1000
 
 # Django
-django_settings = "SDP.settings"
+django_settings = "VistaTurbine.settings"
 
 # Security
 limit_request_line = 4094

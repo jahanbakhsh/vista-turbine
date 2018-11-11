@@ -1,14 +1,14 @@
 #!/bin/bash
 set -e
 
-NAME="SDP Gunicorn"
-SDP_ENV_NAME="SDP_env"
-SDP_PATH=/SDP
-DJANGO_WSGI_MODULE=SDP.wsgi
+NAME="VistaTurbine Gunicorn"
+VistaTurbine_ENV_NAME="venv"
+VistaTurbine_PATH=/VistaTurbine
+DJANGO_WSGI_MODULE=VistaTurbine.wsgi
 
 echo "Starting $NAME as `whoami`"
 
-cd $SDP_PATH
+cd $VistaTurbine_PATH
 
 exec supervisord
-exec gunicorn -c $SDP_PATH/configs/gunicorn/gunicorn.conf.py ${DJANGO_WSGI_MODULE}
+exec gunicorn -c $VistaTurbine_PATH/configs/gunicorn/gunicorn.conf.py ${DJANGO_WSGI_MODULE}

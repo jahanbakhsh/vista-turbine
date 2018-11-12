@@ -132,7 +132,7 @@ hr {
 	background-color: #ad0aaf;
 	padding: 14px 20px;
 	letter-spacing: 1px;
-	margin: 0;
+	margin: 0 auto;
 	font-size: 17px;
 	font-weight: 400;
 	border-radius: 6px;
@@ -213,7 +213,7 @@ header .intro-text {
 	margin: 20px 0 0 0;
 }
 #about .about-text span {
-	color: #70ad47;
+	color: #ad0aaf;
 	font-weight: 700;
 	letter-spacing: -1px;
 }
@@ -239,8 +239,11 @@ header .intro-text {
 #about p {
 	line-height: 24px;
 	margin-top: 20px;
+	text-indent: 2em;
 }
-
+#about img{
+	margin: 0 auto;
+}
 /* customers Section */
 #customers {
 	padding: 120px 0;
@@ -519,7 +522,7 @@ color: #777;
 	height: 40px;
 	padding: 10px;
 	background: #444;
-	color: #ad0aaf;
+	color: white;
 	border-radius: 50%;
 	transition: all 0.3s;
 }
@@ -557,7 +560,8 @@ width: 100%
 .capilitie-modal{
 	display: none;
 	position: fixed;
-	overflow: auto;
+	overflow-x:auto;
+	overflow-y:scroll;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -567,6 +571,7 @@ width: 100%
 	background-color: rgb(100,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
     font-size: 2em;
+    transform: translate(-50%, -50%);
 }
 .modal-content{
 	margin: 0 auto;
@@ -594,4 +599,7 @@ width: 100%
 .modal-content {
 width: 100%;
 }
+}
+p{
+	text-align: justify;
 }

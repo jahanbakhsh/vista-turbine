@@ -10,14 +10,14 @@
 
 <!-- Favicons
     ================================================== -->
-<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+<link rel="shortcut icon" href="{% static 'img/favicon.ico'%}" type="image/x-icon">
 <link rel="apple-touch-icon" href="{% static 'img/apple-touch-icon.png'%}">
 <link rel="apple-touch-icon" sizes="72x72" href="{% static 'img/apple-touch-icon-72x72.png'%}">
-<link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/apple-touch-icon-114x114.png' %}">
+<link rel="apple-touch-icon" sizes="114x114" href="{% static 'img/apple-touch-icon-114x114.png'%}">
 
 <!-- Bootstrap -->
-<link rel="stylesheet" type="text/css"  href="{% static 'css/bootstrap.css'%}">
-<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome/css/font-awesome.css'%}">
+<link rel="stylesheet" type="text/css"  href="{% static 'css/bootstrap.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome/css/font-awesome.css'%}'">
 
 <!-- Slider
     ================================================== -->
@@ -28,7 +28,7 @@
     ================================================== -->
 <link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
 <link rel="stylesheet" type="text/css" href="{% static 'css/nivo-lightbox/nivo-lightbox.css'%}">
-<link rel="stylesheet" type="text/css" href="{% static 'css/nivo-lightbox/default.css'%}">
+<link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -42,12 +42,12 @@
 <!-- Navigation
     ==========================================-->
 <nav id="menu" class="navbar navbar-default navbar-fixed-top">
-  <div class="container"> 
+  <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       <a class="navbar-brand page-scroll" href="#page-top">Vista Turbine</a> </div>
-    
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
@@ -58,9 +58,9 @@
         <li><a href="#contact" class="page-scroll">Contact</a></li>
       </ul>
     </div>
-    <!-- /.navbar-collapse --> 
+    <!-- /.navbar-collapse -->
   </div>
-  <!-- /.container-fluid --> 
+  <!-- /.container-fluid -->
 </nav>
 <!-- Header -->
 <header id="header">
@@ -79,31 +79,131 @@
 <div id="about">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-12">
         <div class="about-text">
           <h2>Welcome to <span>Vista Turbine</span></h2>
           <hr>
-          <p class="justify-text">VISTA’s dedicated engine shop performs all levels of on- and off-wing aircraft engine work in wide range of maintenance activities from borescope inspections to full engine overhaul.
-          VISTA obtained the PART-145 certification for a maintenance organization from the Civil Aviation Organisation of Iran. We offer top quality services to our customers.
-          Our newly engine shop is staffed by highly skilled engine technicians and engineers who provide major repairs on Pratt & Whitney, CFM International and IAE engines including full major periodic inspection (MPI). We also perform line maintenance found on the aircraft we maintain.
-          VISTA ensures that our customer’s engines have been serviced according to OEM manuals and recommendations.
+          <div class="row">
+            <div class="col-md-8 col-xs-12">
+                <h3>INTRODUCTION</h3>
+                <p class="justify-text">VISTA’s dedicated engine shop performs all levels of on- and off-wing aircraft engine work in wide range of maintenance activities from borescope inspections to full engine overhaul.
+                VISTA obtained the PART-145 certification for a maintenance organization from the Civil Aviation Organisation of Iran. We offer top quality services to our customers.
+                Our newly engine shop is staffed by highly skilled engine technicians and engineers who provide major repairs on Pratt & Whitney, CFM International and IAE engines including full major periodic inspection (MPI). We also perform line maintenance found on the aircraft we maintain.
+                VISTA ensures that our customer’s engines have been serviced according to OEM manuals and recommendations.
+                </p>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <h3>ENGINE SUPPORT</h3>
+                <p>
+                  Sometimes it is more practical or even necessary to provide onsite engine maintenance . VISTA engineers can be dispatched at short notice to almost anywhere, with particular in coldest and warmest regions
+                </p>
+            </div>
+          </div>
+          <div class="row">
+            <h3>Engineering Services</h3>
+            <div class="col-xs-12 col-md-8">
+              <h4>a) ECTM</h4>
+              <p>Modern engine maintenance approach is combination of on-condition and also condition monitoring concept. You can wait for a failure (on condition) or you can predict a failure (condition monitoring). Engine Condition Trend Monitoring (ECTM) is a technique to continuously monitor the health of engines in order to find symptoms of damage, deterioration or excessive wear. By monitoring a known set of parameters, usually altitude, outside air temperature (OAT), air speed, ITT, N1/N2 RPMs, fuel flow and vibrations, it’s possible to predict needed maintenance before a failure occurs.
+              An effective ECTM program consists of four parts:
+              </p>
+              <img src="{% static 'img/other/ectm.jpg'%}">
+              <p>VISTA has developed engine monitoring and diagnostics services, based on the analysis of technical and flight data, along with recommendations for fleet maintenance or management.
+              Our ECTM services including generation of warnings, customer notifications and recommended maintenance actions. As part of our Fleet management services, VISTA regularly receives flight data from the operator in real time. We analyze this data and, if needed, propose corrective actions.
+              There is possibility for the operators to perform remote borescope inspection, so that local borescopers at airlines can consult with VISTA engine experts in the least possible time.
+              As a result the engine life and mean time between shop visit will be increased, maintenance overall cost will be decreased and finally the main domain of aircraft maintenance would be efficiently managed.
+              </p>
+              <img src="{% static 'img/other/aircraft.jpg'%}">
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <h4>b) Asset management</h4>
+              <p>Engines are a vital part of overall aircraft value: they represent 30% of the value of a new aircraft, and 80% after 15 years. Conserving this residual or resale value is a primary goal of the air transport industry, especially low-cost carriers and leasing firms.
+              VISTA Asset Management department have access to the comprehensive toolbox of processes and experienced staff which are essential to providing lessors with effective asset management services. This ensures our clients receive balanced information, evaluation data and advice.
+              We can monitor the technical condition of a range of engines during the term of their lease, and periodically review the agreed schedule of inspections and maintenance reserves to adjust for variations in the technical or financial performance of the lessee.
+              VISTA can provide teams of Engine specialists in both documentary and physical survey fields to inspect engine during the lease term at the operator’s facility or convenient airport locations and audit the engine's maintenance records as required.
+
+              We can provide oversight that will identify any shortcomings in the management of the asset, and provide advice as to the most suitable way to address those discrepancies. By co-operating with lessees VISTA can ensure that all the requirements of the lease contracts are being strictly complied with, providing better value in managing the aircraft lease.
+              Finally, VISTA can provide expertise in maintenance reserve analysis ensuring that any reserves paid by the lessee are appropriately distributed in order to, preserve the full residual value of the asset.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-8">
+              <div class="col-xs-12">
+                <h3>c)Consulting services</h3>
+                <ol type="I">
+                  <li> <h4>Lease agreements</h4></li>
+                    <p>VISTA has assisted engine investors on specific engine queries during preparation and negotiations of lease agreements. We combine our legal, business and technical expertise to draft lease contracts, establish favorable terms and rates for maintenance reserves, and offer negotiation support, to ensure the best possible return and minimize investment risk.</p>
+                  <li> <h4>Purchase agreements</h4></li>
+                    <p>VISTA has in-depth technical knowledge of engine model specific issues which need to be addressed at the time of purchase. When drafting the contract, advising on the conditions and assisting you in the negotiations, we’ll focus on minimizing risk to secure the right deal for you. Knowing the reliability of the engine, we can assist in obtaining the proper warranties, guarantees and after sale support.</p>
+                </ol>
+              </div>
+              <div class="col-xs-12">
+                <h3>d) Shop visit management</h3>
+                <p>VISTA takes a pro-active approach to engine service and repair management. Our shop visit management experts have assisted the customers, repairing most types of commercial engines in all engine shops worldwide. The VISTA engine team knows the ins and outs of these engines and can provide the right insight on work scoping and overall engine performance. We provide a comprehensive service, from reviewing the work scope and attending engine inspections to reviewing invoices and filing maintenance claims.
+                By performing the correct level of maintenance, negotiating the maintenance agreement and keeping pressure on the engine shop, VISTA can achieve a remarkable overall cost savings.
+                </p>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <h3>e) Technical Training Services</h3>
+              <p>VISTA training department is a specialist on-site and e-learning provider for the aviation industry. A variety of courses is also available via our Online Training platform which allows distance learning from any world location at any time.
+              According to EASA Decisions 2009/006/R and 2009/007/R issued in March 2009 which amended existing Acceptable Means of Compliance material of Part M and Part 145 to account for acting under these parts being required to undertake extensive staff and management training programmes.
+              </p>
+              <p>
+                Our training include following courses:
+                <ul  type="square">
+                  <li>Aviation Legislation (Module 10)</li>
+                  <li>Part 145</li>
+                  <li>Maintenance Human Factors</li>
+                  <li>Fuel Tank Safety</li>
+                  <li>EWIS for Target Groups 1 to 8.</li>
+                  <li>SMS Demystified</li>
+                  <li>Engine Inspection Procedures & Methods</li>
+                </ul>
+                Also the training courses can be adopted and expanded according to customers’ specific requirements which enable them to experience.
+
+              </p>
+            </div>
+
+          </div>
+
+
+          <h2>Lease</h2>
+          <p>VISTA is a company with spirit and flexible services for our customer, our main purpose is to support our customer operations and keep their airplanes on the air. We provided leasing solutions for airlines, with tremendous innovation and satisfaction.
+          Our leasing solutions are exclusive, created for every customer’s needs. We provide specialized engine leasing services, for the short, medium and long term, during engines repairs or leasing programs for your fleet.
+          VISTA can also handle the disassembly and recycling of parts and materials on Pratt & Whitney, CFM International and IAE engines at the end of life. These operations increase the residual value of engines at the end of revenue service in addition to its engine dismantling business.
           </p>
+          <div class="row">
+              <h2>Maintenance</h2>
+            <div class="col-xs-12 col-md-8">
+              <h4>a) On-site maintenance</h4>
+              <p>VISTA mobile maintenance teams handle a broad range of on-site services – on-wing, – giving operators technical support anywhere.
+              VISTA also has teams dedicated to supporting customer operations. All of our services at the operators have the same objectives: comply with quality standards to ensure flight safety, decrease maintenance costs and reduce the the aircraft and engine ground time. These services including:
+              </p>
+              <ul type="square">
+                <li>I.  VISTA EEDOS® (Enhanced Engine Diagnostic On-Site) teams provide a full range of expert technical assistance services to our customers. Our teams are specialized in on-site maintenance of JT8D-10/200, CFM56 and V2500 engines, performing high value-added services tailored to customer needs. </li>
+                <li>II. LRU (line replaceable unit) support services, providing engine components and subassemblies that can be removed and replaced on site.</li>
+                <li>III.  VISTA designs, sells, supports and distributes all tools needed for flight-line maintenance of supported engines. For all of these tools, we give operators the associated technical assistance and after-sales support services, including maintenance, repair and replacements.</li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <h4>b) Shop Maintenance</h4>
+              <p>Our high quality shop service includes a wide variety of deep maintenance according to manufacturer airworthiness instructions, recommendations and definitely aviation regulations. VISTA AMO approved scope of work covers JT8D-200 Series, V2500 and CFM56 Engines.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12 col-md-8">
+              <h2>Sales</h2>
+              <p>In addition to our extensive service capability, we have a serviceable engines and parts for sales, exchange and loan. We provide versatile and flexible opportunities for our customers, our main purpose is to support our customer operations and keep your airplanes operational in a safe and efficient manner.</p>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <h2>Supports</h2>
+              <p>24/7 Customer Support Center (CSC), provides a continuous point of contact, to support our customer’s. The center's technical experts help and fix customer issues and ensure aircraft dispatch reliability. </p>
+            </div>
+          </div>
           <a href="#customers" class="btn btn-custom btn-lg page-scroll">View All Customers</a> </div>
       </div>
-      <div class="col-xs-12 col-md-offset-2 col-md-3">
-        <div class="about-media"> <img src="{% static 'img/about-1.png'%}" alt=" "> </div>
-        <div class="about-desc">
-          <h3>Vista Shop</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
-        </div>
-      </div>
-      <div class="col-xs-12 col-md-3">
-        <div class="about-media"> <img src="{% static 'img/about-2.png'%}" alt=" "> </div>
-        <div class="about-desc">
-          <h3>Vista Maintenance Organization</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante.</p>
-        </div>
-      </div>
+
     </div>
   </div>
 </div>
@@ -161,7 +261,7 @@
           <div class="portfolio-item">
             <div > <a href="{% static 'img/shap/01-large.jpg'%}" title="Project Title" data-lightbox-gallery="gallery1">
               <div class="hover-text">
-
+                <h4>Lorem Ipsum</h4>
               </div>
               <img src="{% static 'img/shap/01-small.jpg'%}" class="img-responsive" alt="Project Title"> </a> </div>
           </div>
@@ -263,7 +363,7 @@
               <div id="capilitie-modal" class="modal">
               <span class="close">&times;</span>
                  <img  id="capabilitie-img-large" class="modal-content img-fluid">
-</div>
+              </div>
     </div>
   </div>
 </div>
@@ -273,23 +373,30 @@
     <div class="section-title text-center">
       <h2>Contact Us</h2>
       <hr>
-
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
     </div>
     <div class="col-md-10 col-md-offset-1 contact-info">
-      <div class="col-md-6">
-        <h3>Central Office Address</h3>
+      <div class="col-md-4">
+        <h3>Central Office</h3>
         <hr>
         <div class="contact-item">
-          <p>No.20, Corner of Barikani ally Shahid Nafisi street, Ekbatan township, Tehran, Iran</p>
+          <p>4321 California St,</p>
+          <p>San Francisco, CA 12345</p>
         </div>
       </div>
-
-      <div class="col-md-6">
+      <div class="col-md-4">
+        <h3>Vista Shop</h3>
+        <hr>
+        <div class="contact-item">
+          <p>Monday-Saturday: 07:00 - 18:00</p>
+          <p>Sunday: CLOSED</p>
+        </div>
+      </div>
+      <div class="col-md-4">
         <h3>Contact Info</h3>
         <hr>
         <div class="contact-item">
-          <p>Tell : 00982144664900</p>
-           <p>Fax : 00982144664900</p>
+          <p>Phone: +98 21 456 1234</p>
           <p>Email: info@vistaturbine.com</p>
         </div>
       </div>

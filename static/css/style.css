@@ -31,7 +31,7 @@ p.intro {
 	line-height: 24px;
 }
 a {
-	color: #6aaf08;
+	color: #ad0aaf;
 	font-weight: 400;
 }
 a:hover, a:focus {
@@ -68,7 +68,7 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	background: #6aaf08;
+	background: #ad0aaf;
 	margin: 0 auto;
 	margin-bottom: 20px;
 	border: 0;
@@ -98,7 +98,7 @@ hr {
 	margin: 9px 20px 0 20px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color: #6aaf08;
+	color: #ad0aaf;
 }
 .on {
 	background-color: #333 !important;
@@ -106,7 +106,7 @@ hr {
 	padding: 15px 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #6aaf08 !important;
+	color: #ad0aaf !important;
 	background-color: transparent;
 }
 .navbar-toggle {
@@ -117,7 +117,7 @@ hr {
 	border-color: #fff;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
-	background-color: #6aaf08;
+	background-color: #ad0aaf;
 }
 .section-title {
 	margin-bottom: 70px;
@@ -129,7 +129,7 @@ hr {
 .btn-custom {
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #6aaf08;
+	background-color: #ad0aaf;
 	padding: 14px 20px;
 	letter-spacing: 1px;
 	margin: 0;
@@ -240,10 +240,11 @@ header .intro-text {
 	line-height: 24px;
 	margin-top: 20px;
 }
+
 /* customers Section */
 #customers {
 	padding: 120px 0;
-	background: #6aaf08;
+	background: #ad0aaf;
 }
 #customers .customer-media {
 	margin: 10px;
@@ -254,6 +255,7 @@ header .intro-text {
 	height: 225px;
 	border-radius: 50%;
 	border: 10px solid rgba(255,255,255,0.1);
+	margin: 0 auto;
 }
 #customers .customer-desc {
 	margin: 10px 10px 40px;
@@ -302,11 +304,11 @@ ol.type li a {
 	transition: all 0.3s;
 }
 ol.type li a.active {
-	background: #6aaf08;
+	background: #ad0aaf;
 	color: #fff;
 }
 ol.type li a:hover {
-	background: #6aaf08;
+	background: #ad0aaf;
 	color: #fff;
 }
 .isotope-item {
@@ -382,12 +384,11 @@ ol.type li a:hover {
 }
 /* Capabilities Section */
 #capabilities {
-	background: #444 url(../img/capabilities-bg.jpg) center center no-repeat fixed;
 	background-size: cover;
 }
 #capabilities .overlay {
 	padding: 120px 0;
-	background: rgba(106, 175, 8, 0.85);
+	background:#ad0aaf;
 }
 #capabilities h2 {
 	color: #fff;
@@ -518,12 +519,12 @@ color: #777;
 	height: 40px;
 	padding: 10px;
 	background: #444;
-	color: #6aaf08;
+	color: #ad0aaf;
 	border-radius: 50%;
 	transition: all 0.3s;
 }
 #footer .social i.fa:hover {
-	background: #6aaf08;
+	background: #ad0aaf;
 	color: #fff;
 }
 #footer p {
@@ -541,8 +542,7 @@ color: #777;
 	width: 300px;
 	border-radius: 5px;
 	top: 0;
-    display:block;
-    margin:auto;
+	margin: 0 auto;
 }
 #capabilitie-img:hover{
 	opacity: 0.7;
@@ -579,13 +579,13 @@ width: 100%
 	top: 5%;
 	right: 5%;
 	position: absolute;
-	font-size: 3em;
+	font-size: 2em;
 	font-weight: bold;
 	cursor: pointer;
 }
 .close:hover,
 .close:focus {
-    color: white;
+    color: #bbb;
     text-decoration: none;
     cursor: pointer;
 }

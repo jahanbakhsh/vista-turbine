@@ -18,5 +18,5 @@ from django.contrib import admin
 from Apps.loder.views import Index
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^index/$', Index),
+    url(r'', Index),
 ]

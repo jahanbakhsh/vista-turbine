@@ -209,9 +209,9 @@ $(".submit-form").click(function(evt){
             data: JSON.stringify(data),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
-            success: function(data){alert("");},
+            success: function(data){alert("Your information has been successfully saved.");},
             failure: function(errMsg) {
-                alert(errMsg);
+                alert("An error occurred");
             }
         });
     });

@@ -603,3 +603,106 @@ width: 100%;
 p{
 	text-align: justify;
 }
+
+/* employment
+*/
+.form table{
+	width: 100%;
+	border-bottom: solid 3px #9900CC;
+	border-left:solid 3px #9900CC;
+	border-right:solid 3px #9900CC;
+}
+.form th{
+	background-color:#9900CC;
+	color: white;
+}
+.form td{
+	overflow:scroll;
+	padding: 0;
+	border-right:1px solid;
+}
+
+
+.job-description{
+	margin-top: 15px;
+}
+.job-description textarea{
+	width: 100%;
+	resize: none;
+	display: block;
+	column-count: 3;
+    background-attachment: local;
+    background-image:
+        linear-gradient(to right, white 10px, transparent 10px),
+        linear-gradient(to left, white 10px, transparent 10px),
+        repeating-linear-gradient(white, white 30px, #ccc 30px, #ccc 31px, white 31px);
+    line-height: 31px;
+    padding: 8px 10px;
+}
+.personal-information .education{
+	padding: 20px 0;
+}
+#job-description{
+	margin-bottom: 30px;
+}
+.last-jobs{
+	font-size: 16px;
+}
+.job1 ,.job2, .job3{
+	margin-bottom: 40px;
+}
+table  input{
+	width: 100%;
+	border: 0;
+
+}
+table tr:nth-child(odd) input{
+				background-color:rgb(176,191,183);
+}
+.personal-information{
+	border: 3px solid #9900CC;
+	border-top: 15px solid #9900CC;
+	margin-top: 20px;
+	padding: 5px;
+	font-size: 14px;
+}
+.form h2{
+	text-align: center;
+}
+.personal-information label{
+	font-size: 16px;
+	margin-right: 5px;
+}
+.personal-information input{
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid rgb(153,0,204);
+	text-align: center;
+}
+.p2-information, .p3-information{
+	margin-top: 20px;
+}
+.job-description label{
+	font-size: 14px;
+}
+table{
+	table-layout: fixed;
+}
+table td{
+border: 0px;
+  table-layout:fixed;
+  overflow:hidden;
+  word-wrap:break-word;
+}
+.fotm-btn input{
+	width: 100%;
+}
+table tr:nth-child(odd) select{
+	background-color:rgb(176,191,183);
+}
+select{
+	width: 100%;
+	top:0;
+	bottom: 0;
+}

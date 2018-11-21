@@ -50,3 +50,4 @@ class ComputerLevel(models.Model):
     program = models.CharField(max_length=100)
 
 
+

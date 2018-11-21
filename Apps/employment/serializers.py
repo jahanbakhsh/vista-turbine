@@ -52,3 +52,4 @@ class HierdSerializer(serializers.Serializer):
     certificates = CertificateSerializer()
     language_level = LanguageLevelSerializer()
     computer_level = ComputerLevelSerializer()
+

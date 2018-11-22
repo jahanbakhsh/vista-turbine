@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jet',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -77,39 +78,39 @@ WSGI_APPLICATION = 'VistaTurbine.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'VistaTurbine',
-#         'USER': 'root',
-#         'PASSWORD': 'jahan4748',
-#         'HOST': '127.0.0.1',
-#         'PORT': '3306',
-#         'CONN_MAX_AGE': 0,
-#         # from: http://blog.ionelmc.ro/2014/12/28/terrible-choices-mysql/
-#         'OPTIONS': {
-#             # 'sql_mode': 'TRADITIONAL',
-#             'charset': 'utf8',
-#             'init_command': 'SET '
-#                             'default_storage_engine=INNODB, '
-#                             'character_set_connection=utf8, '
-#                             'collation_connection=utf8_unicode_ci;'
-#         },
-#         'AUTOCOMMIT': True,
-#         'TEST': {
-#             'NAME': 'VOD_test_db',
-#             'CHARSET': 'utf8',
-#             'COLLATION': 'utf8_unicode_ci',
-#         },
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'VistaTurbine',
+        'USER': 'django',
+        'PASSWORD': 'jahan4748',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
+        'CONN_MAX_AGE': 0,
+        # from: http://blog.ionelmc.ro/2014/12/28/terrible-choices-mysql/
+        'OPTIONS': {
+            # 'sql_mode': 'TRADITIONAL',
+            'charset': 'utf8',
+            'init_command': 'SET '
+                            'default_storage_engine=INNODB, '
+                            'character_set_connection=utf8, '
+                            'collation_connection=utf8_unicode_ci;'
+        },
+        'AUTOCOMMIT': True,
+        'TEST': {
+            'NAME': 'VOD_test_db',
+            'CHARSET': 'utf8',
+            'COLLATION': 'utf8_unicode_ci',
+        },
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -166,10 +167,10 @@ TEMPLATES = [
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-STATICFILES_DIRS=[
-    os.path.join(BASE_DIR, 'static')
-]
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# STATICFILES_DIRS=[
+#     os.path.join(BASE_DIR, 'static')
+# ]
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (

@@ -88,7 +88,7 @@ class Hierd(APIView, BaseAPIView):
         try:
             computer_level = validate_data.get('computer_level')[1:]
             for item in computer_level:
-                if item.get('level') != '':
+                if item.get('program') != '':
                     ComputerLevel(
                         person = person,
                         level = item.get('level',None),
@@ -100,7 +100,7 @@ class Hierd(APIView, BaseAPIView):
         try:
             language_level = validate_data.get('language_level')[1:]
             for item in language_level:
-                if item.get('level') != '':
+                if item.get('language') != '':
                     LanguageLevel(
                         person = person,
                         level = item.get('level',None),

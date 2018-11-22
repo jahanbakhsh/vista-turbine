@@ -18,6 +18,7 @@ from django.contrib import admin
 from Apps.loder.views import Index
 
 urlpatterns = [
+    url(r'^jet/', include('jet.urls', 'jet')),  # Django JET URLS
     url(r'^admin/', admin.site.urls),
     url(r'^employment/' , include('Apps.employment.urls')),
     url(r'^$', Index),

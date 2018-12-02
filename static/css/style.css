@@ -706,3 +706,47 @@ select{
 	top:0;
 	bottom: 0;
 }
+/* ajax form
+ */
+.steps label{
+	display: inline;
+	float: left;
+	top: 0;
+	margin-left: 15px;
+	font-size: 1.3em;
+}
+.steps{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+
+.steps li{
+  display: inline-block;
+  margin: 20px;
+  color: #ccc;
+  padding-bottom: 5px;
+}
+
+.steps li.is-active{
+  border-bottom: 1px solid #3498db;
+  color: #3498db;
+}
+
+#form-header{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+#form-content{
+	margin-bottom: 20px;
+}
+#form-footer{
+	margin-bottom: 20px;
+}
+#form-footer button{
+	margin: 0 auto;
+	display: inline-flex;
+}

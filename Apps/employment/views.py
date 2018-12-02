@@ -10,9 +10,11 @@ from Apps.employment.serializers import HierdSerializer
 
 
 class Hierd(APIView, BaseAPIView):
-    # permission_classes = (AllowAny,)
+    permission_classes = (AllowAny,)
     serializer_classes = HierdSerializer
     def post(self, request, format=None, *args, **kwargs):
+        print(request.data)
+        print('hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh')
         try:
             serializer = self.serializer_classes(data=request.data)
             serializer.is_valid(raise_exception = True)

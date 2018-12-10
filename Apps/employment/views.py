@@ -14,7 +14,6 @@ class Hierd(APIView, BaseAPIView):
     serializer_classes = HierdSerializer
     def post(self, request, format=None, *args, **kwargs):
         print(request.data)
-        print('hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh')
         try:
             serializer = self.serializer_classes(data=request.data)
             serializer.is_valid(raise_exception = True)

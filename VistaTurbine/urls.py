@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from Apps.loder.views import Index
+from Apps.loder.views import Index, FCBIndex
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^jet/', include('jet.urls', 'jet')),  # Django JET URLS
     url(r'^admin/', admin.site.urls),
     url(r'^employment/' , include('Apps.employment.urls')),
     url(r'^$', Index),
-]
+    url(r'^fc', include('Apps.fcb.urls')),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

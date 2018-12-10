@@ -1,11 +1,12 @@
 import requests, json
 from django.utils.decorators import method_decorator
 from django.views import View
+from django.db import models
 from django.views.decorators.cache import never_cache
 from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
 import logging
-
+from Apps.users.models import User
 logger = logging.getLogger(__name__)
 
 
@@ -31,7 +32,6 @@ class BaseAPIView(View):
     @method_decorator(csrf_exempt)
     def dispatch(self, *args, **kwargs):
         return super(BaseAPIView, self).dispatch(*args, **kwargs)
-
 
 
 

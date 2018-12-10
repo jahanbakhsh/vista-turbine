@@ -1,0 +1,101 @@
+{% load staticfiles%}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Vista FCB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/bootstrap-rtl.min_.css'%}">
+  <link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome/css/font-awesome.min.css'%}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/fcbstyle.css'%}">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="{% static 'js/jquery.1.11.1.js'%}"></script>
+  <style>
+
+</style>
+
+</head>
+<body>
+<div id="main" class="container">
+    <div class="row">
+            <div id="header">
+    <div class="container">
+      <div class="col-xs-12 col-sm-6">
+        <span id="date">date</span>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+         data-target="#social-menu" id="collect-btn">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+      </button>
+      <div class="col-xs-12 col-sm-6 navbar-collapse collapse" id="social-menu">
+        <ul class="nav navbar-nav navbar-left" id="social-net">
+          <li><a href="#" class="fa fa-google"></a></li>
+          <li><a href="#" class="fa fa-linkedin"></a></li>
+          <li><a href="#" class="fa fa-youtube"></a></li>
+          <li><a href="#" class="fa fa-instagram"></a></li>
+        </ul>
+    </div>
+  </div>
+  </div>
+    </div>
+
+  <!--- navbar -->
+  <nav class="navbar navbar-vista">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" 
+         data-target="#btn-menu" id="collect-btn">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand navbar-right">
+          <img class="img-responsive" src="{% static 'img/fcb-img/logo1.png'%}">
+        </a>
+      </div>
+      <div class="navbar-collapse collapse" id="btn-menu">
+        <ul class="nav navbar-nav">
+          <li><a href="#">صفحه اصلی</a></li>
+          <li><a href="#">تیم ما</a></li>
+          <li><a href="#">گالری</a></li>
+          <li><a href="#">تقویم بازی ها</a></li>
+          <li><a href="#">درباره ما</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Carousel -->
+    <div class="row">
+        <div class="slideshow-container">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <br>
+
+        <div class="slide-changer" style="text-align:center">
+            <!--
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+            -->
+        </div>
+    </div>
+
+  <!-- Intro player -->
+    <div class="intro-player">
+        <div class="container">
+
+        </div>
+    </div>
+
+  <script type="text/javascript" src="{% static 'js/tdate.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/slider.js'%}"></script>
+
+</body>
+</html>
